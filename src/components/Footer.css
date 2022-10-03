@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    color: #1f5484;
+    background: rgb(56, 152, 241);
+    background: -moz-linear-gradient(
+        180deg,
+        rgba(56, 152, 241, 1) 0%,
+        rgba(255, 255, 255, 1) 100%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        180deg,
+        rgba(56, 152, 241, 1) 0%,
+        rgba(255, 255, 255, 1) 100%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(56, 152, 241, 1) 0%,
+        rgba(255, 255, 255, 1) 100%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3898f1",endColorstr="#ffffff",GradientType=1);
+}
+@media only screen and (max-width: 1024px) {
+    footer {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        height: 4vh;
+        font-size: 0.7rem;
+    }
+}

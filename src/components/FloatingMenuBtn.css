@@ -1,0 +1,36 @@
+#fries-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    border-radius: 15px;
+    padding: 14px 11px;
+    border: 0;
+    z-index: 1;
+    background: rgb(56, 194, 240);
+    background: linear-gradient(
+        90deg,
+        rgba(56, 194, 240, 1) 0%,
+        rgba(68, 234, 228, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38c2f0",endColorstr="#44eae4",GradientType=1);
+}
+
+#fries-menu-btn div {
+    width: 40px;
+    height: 4px;
+    background-color: #262626;
+    border-radius: 20px;
+}
+
+#fries-menu-btn #middle-fry {
+    width: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    #fries-menu-btn {
+        display: flex;
+    }
+}

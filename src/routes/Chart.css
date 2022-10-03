@@ -1,0 +1,30 @@
+#chart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+#chart {
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #chart {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #chart-section {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #chart-section {
+        width: 100%;
+    }
+}

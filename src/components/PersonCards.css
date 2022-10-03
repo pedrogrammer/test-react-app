@@ -1,0 +1,69 @@
+#cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(3, 31%);
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 10px 0;
+    height: 90%;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.person-card #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: azure;
+    margin: 0;
+    height: 55px;
+    padding: 5px;
+}
+
+.person-card #body {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#loader {
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #cards-wrapper {
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: none;
+        justify-content: space-evenly;
+        gap: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cards-wrapper {
+        grid-template-columns: repeat(2, 46%);
+    }
+
+    .person-card #title {
+        font-size: 0.7rem;
+    }
+
+    .person-card #body {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #cards-wrapper {
+        height: 93%;
+        padding: 6px;
+    }
+}
